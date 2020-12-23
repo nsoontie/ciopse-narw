@@ -34,3 +34,6 @@ These scripts worked for older versions of CIOPSE (e.g. SN1500 and the current v
  CSTRPN2CDF getstdncalendars => ncal=           0
 abort: Exiting now...
 ```
+
+### Update
+I was able to resolve this issue by removing the ip1 fields associated with the surface using editfst. The appropriate changes were made to netcdf_wrapper.sh where the ip1 values associated with the surface are removed from the rpn file before it is passed into to_netcdf.sh.

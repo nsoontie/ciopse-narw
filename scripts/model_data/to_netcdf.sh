@@ -7,9 +7,9 @@
 ## Author: Nancy Soontiens
 
 # Load cstrpn2cdf utilities 
-#. ssmuse-sh -x /fs/ssm/eccc/cmd/cmde/ocean/tools/20190903/ # from DFO-GPSC wiki
+. ssmuse-sh -x /fs/ssm/eccc/cmd/cmde/ocean/tools/20190903/ # from DFO-GPSC wiki
 #. ssmuse-sh -x /fs/ssm/eccc/cmd/cmde/ocean/tools/20201113/ # newest version - not compatibile with amd64 processors (only skylake)
-. ssmuse-sh -x /fs/ssm/eccc/cmd/cmde/ocean/tools/20191028/ # newest version that works with amd64
+#. ssmuse-sh -x /fs/ssm/eccc/cmd/cmde/ocean/tools/20191028/ # newest version that works with amd64
 
 
 # Global attibutes
