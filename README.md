@@ -24,4 +24,4 @@ The following research runs are available on the gpsc:
 
 ## Supplementary files
 * /home/sdfo000/sitestore4/opp_drift_fa3/share_drift/CIOPSE_SN1500/CIOPSE_mesh_files/CIOPSE_mesh_with_angle.nc - contains grid angles for velocity rotation to North/East. Also contains gridspacing information.
-** Note: Between SN1500 and EXP24, more veritical grid cells were added so a new mesh file is needed for EXP24. Howevever, if the horizontal grid is unchanged then the rotation coeffiecients are likely still valid.
+  * Note: Between SN1500 and EXP24, more veritical grid cells were added so a new mesh file is needed for EXP24. Howevever, if the horizontal grid is unchanged then the rotation coeffiecients are likely still valid.
