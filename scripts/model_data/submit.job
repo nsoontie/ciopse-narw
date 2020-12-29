@@ -1,0 +1,37 @@
+#! /bin/bash
+#
+#
+#
+#$ -M nancy.soontiens@dfo-mpo.gc.ca
+#$ -m bea
+#
+#$ -j y
+#$ -o /home/nso001/logs
+#$ -e /home/nso001/logs
+#
+#$ -P dfo_dpnm-fa3
+#
+#$ -pe dev 1
+#$ -l res_cpus=1
+#$ -l res_mem=50000
+#$ -l res_tmpfs=0
+#
+#$ -l res_image=dfo/dfo_all_default_ubuntu-18.04-amd64_latest
+
+#$ -l h_rt=06:00:00
+
+
+MINICONDA_PATH=$HOME/data/work2/miniconda/envs/develop
+
+old_PYTHONPATH=$PYTHONPATH
+unset PYTHONPATH
+
+export PATH=$MINICONDA_PATH/bin:$PATH
+export PYTHONPATH=$MINICONDA_PATH/bin
+export PROJ_LIB=$MINICONDA_PATH/share/proj/
+
+
+cd $HOME/code/drifters/ciopse-narw/scripts/model_data
+# Call your program
+bash netcdf_wrapper.sh
+ 
